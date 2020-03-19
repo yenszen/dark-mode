@@ -17,5 +17,5 @@ export function useLocalStorage(key, initialValue) {
     window.localStorage.setItem(key, JSON.stringify(value));
   };
 
-  return [storedValue, setStoredValue, setValue];
+  return [storedValue, setValue];
 }
